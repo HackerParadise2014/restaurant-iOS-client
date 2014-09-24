@@ -14,6 +14,12 @@
 		490FC6CC19D304F00061CED3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 490FC6CA19D304F00061CED3 /* LaunchScreen.xib */; };
 		490FC6D819D304F00061CED3 /* RestaurantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490FC6D719D304F00061CED3 /* RestaurantTests.swift */; };
 		490FC6E219D317030061CED3 /* DSC_0383.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 490FC6E119D317030061CED3 /* DSC_0383.jpg */; };
+		491B9B7219D3463A002586B8 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491B9B7119D3463A002586B8 /* Order.swift */; };
+		4923ED1B19D33C5F002A00A0 /* OrderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923ED1A19D33C5F002A00A0 /* OrderCollectionViewCell.swift */; };
+		4923ED4119D340DB002A00A0 /* HTTPRequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923ED3C19D340DB002A00A0 /* HTTPRequestSerializer.swift */; };
+		4923ED4219D340DB002A00A0 /* HTTPResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923ED3D19D340DB002A00A0 /* HTTPResponseSerializer.swift */; };
+		4923ED4319D340DB002A00A0 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923ED3E19D340DB002A00A0 /* HTTPTask.swift */; };
+		4923ED4419D340DB002A00A0 /* HTTPUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923ED3F19D340DB002A00A0 /* HTTPUpload.swift */; };
 		496798BB19D3320800863963 /* OrderHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496798BA19D3320800863963 /* OrderHistoryViewController.swift */; };
 		4992F9C319D31A0200403E9B /* new.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4992F9C219D31A0200403E9B /* new.jpg */; };
 		4992F9C619D322E100403E9B /* order.png in Resources */ = {isa = PBXBuildFile; fileRef = 4992F9C419D322E100403E9B /* order.png */; };
@@ -42,6 +48,12 @@
 		490FC6D619D304F00061CED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		490FC6D719D304F00061CED3 /* RestaurantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTests.swift; sourceTree = "<group>"; };
 		490FC6E119D317030061CED3 /* DSC_0383.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DSC_0383.jpg; sourceTree = "<group>"; };
+		491B9B7119D3463A002586B8 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		4923ED1A19D33C5F002A00A0 /* OrderCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCollectionViewCell.swift; sourceTree = "<group>"; };
+		4923ED3C19D340DB002A00A0 /* HTTPRequestSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequestSerializer.swift; sourceTree = "<group>"; };
+		4923ED3D19D340DB002A00A0 /* HTTPResponseSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponseSerializer.swift; sourceTree = "<group>"; };
+		4923ED3E19D340DB002A00A0 /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		4923ED3F19D340DB002A00A0 /* HTTPUpload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPUpload.swift; sourceTree = "<group>"; };
 		496798BA19D3320800863963 /* OrderHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderHistoryViewController.swift; sourceTree = "<group>"; };
 		4992F9C219D31A0200403E9B /* new.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = new.jpg; sourceTree = "<group>"; };
 		4992F9C419D322E100403E9B /* order.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = order.png; sourceTree = "<group>"; };
@@ -87,6 +99,7 @@
 		490FC6BE19D304F00061CED3 /* Restaurant */ = {
 			isa = PBXGroup;
 			children = (
+				491B9B7019D34624002586B8 /* Models */,
 				490FC6C119D304F00061CED3 /* AppDelegate.swift */,
 				496798BC19D3323400863963 /* Controllers */,
 				490FC6C519D304F00061CED3 /* Main.storyboard */,
@@ -100,6 +113,10 @@
 		490FC6BF19D304F00061CED3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4923ED3C19D340DB002A00A0 /* HTTPRequestSerializer.swift */,
+				4923ED3D19D340DB002A00A0 /* HTTPResponseSerializer.swift */,
+				4923ED3E19D340DB002A00A0 /* HTTPTask.swift */,
+				4923ED3F19D340DB002A00A0 /* HTTPUpload.swift */,
 				4992F9C419D322E100403E9B /* order.png */,
 				4992F9C519D322E100403E9B /* history.png */,
 				4992F9C219D31A0200403E9B /* new.jpg */,
@@ -126,11 +143,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		491B9B7019D34624002586B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				491B9B7119D3463A002586B8 /* Order.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		496798BC19D3323400863963 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				490FC6C319D304F00061CED3 /* ViewController.swift */,
 				496798BA19D3320800863963 /* OrderHistoryViewController.swift */,
+				4923ED1A19D33C5F002A00A0 /* OrderCollectionViewCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -239,9 +265,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4923ED4419D340DB002A00A0 /* HTTPUpload.swift in Sources */,
+				4923ED4319D340DB002A00A0 /* HTTPTask.swift in Sources */,
 				496798BB19D3320800863963 /* OrderHistoryViewController.swift in Sources */,
+				491B9B7219D3463A002586B8 /* Order.swift in Sources */,
 				490FC6C419D304F00061CED3 /* ViewController.swift in Sources */,
+				4923ED4219D340DB002A00A0 /* HTTPResponseSerializer.swift in Sources */,
+				4923ED4119D340DB002A00A0 /* HTTPRequestSerializer.swift in Sources */,
 				490FC6C219D304F00061CED3 /* AppDelegate.swift in Sources */,
+				4923ED1B19D33C5F002A00A0 /* OrderCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

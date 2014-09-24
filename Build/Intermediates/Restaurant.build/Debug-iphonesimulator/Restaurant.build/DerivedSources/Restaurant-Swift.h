@@ -61,6 +61,57 @@ typedef uint_least32_t char32_t;
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 
 #if defined(__has_feature) && __has_feature(modules)
+@import Foundation;
+@import ObjectiveC;
 #endif
+
+
+SWIFT_CLASS("_TtC10Restaurant13HTTPOperation")
+@interface HTTPOperation : NSOperation
+@property (nonatomic) BOOL done;
+@property (nonatomic, readonly, getter=isAsynchronous) BOOL asynchronous;
+@property (nonatomic, readonly, getter=isCancelled) BOOL cancelled;
+@property (nonatomic, readonly, getter=isExecuting) BOOL executing;
+@property (nonatomic, readonly, getter=isFinished) BOOL finished;
+@property (nonatomic, readonly, getter=isReady) BOOL ready;
+- (void)start;
+- (void)cancel;
+- (void)finish;
+- (instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10Restaurant21HTTPRequestSerializer")
+@interface HTTPRequestSerializer : NSObject
+@property (nonatomic, copy) NSDictionary * headers;
+@property (nonatomic) NSUInteger stringEncoding;
+@property (nonatomic) BOOL allowsCellularAccess;
+@property (nonatomic) BOOL HTTPShouldHandleCookies;
+@property (nonatomic) BOOL HTTPShouldUsePipelining;
+@property (nonatomic) NSTimeInterval timeoutInterval;
+@property (nonatomic) NSURLRequestCachePolicy cachePolicy;
+- (instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10Restaurant8HTTPTask")
+@interface HTTPTask : NSObject <NSURLSessionDelegate>
+@property (nonatomic, copy) NSString * baseURL;
+@property (nonatomic) HTTPRequestSerializer * requestSerializer;
+- (instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10Restaurant10HTTPUpload")
+@interface HTTPUpload : NSObject
+@end
+
+
+
+/// Does the JSON version
+SWIFT_CLASS("_TtC10Restaurant21JSONRequestSerializer")
+@interface JSONRequestSerializer : HTTPRequestSerializer
+- (instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 #pragma clang diagnostic pop
