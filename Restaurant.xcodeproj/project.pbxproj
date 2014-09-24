@@ -15,6 +15,12 @@
 		490FC6D819D304F00061CED3 /* RestaurantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490FC6D719D304F00061CED3 /* RestaurantTests.swift */; };
 		490FC6E219D317030061CED3 /* DSC_0383.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 490FC6E119D317030061CED3 /* DSC_0383.jpg */; };
 		491B9B7219D3463A002586B8 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491B9B7119D3463A002586B8 /* Order.swift */; };
+		491B9B7A19D35F2E002586B8 /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491B9B7319D35F2E002586B8 /* Json.swift */; };
+		491B9B7B19D35F2E002586B8 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491B9B7419D35F2E002586B8 /* JsonParser.swift */; };
+		491B9B7C19D35F2E002586B8 /* JsonParser+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491B9B7519D35F2E002586B8 /* JsonParser+Foundation.swift */; };
+		491B9B7D19D35F2E002586B8 /* JsonSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491B9B7719D35F2E002586B8 /* JsonSerializer.swift */; };
+		491B9B7E19D35F2E002586B8 /* ParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491B9B7819D35F2E002586B8 /* ParseError.swift */; };
+		491B9B7F19D35F2E002586B8 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491B9B7919D35F2E002586B8 /* StringUtils.swift */; };
 		4923ED1B19D33C5F002A00A0 /* OrderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923ED1A19D33C5F002A00A0 /* OrderCollectionViewCell.swift */; };
 		4923ED4119D340DB002A00A0 /* HTTPRequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923ED3C19D340DB002A00A0 /* HTTPRequestSerializer.swift */; };
 		4923ED4219D340DB002A00A0 /* HTTPResponseSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923ED3D19D340DB002A00A0 /* HTTPResponseSerializer.swift */; };
@@ -49,6 +55,13 @@
 		490FC6D719D304F00061CED3 /* RestaurantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTests.swift; sourceTree = "<group>"; };
 		490FC6E119D317030061CED3 /* DSC_0383.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DSC_0383.jpg; sourceTree = "<group>"; };
 		491B9B7119D3463A002586B8 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		491B9B7319D35F2E002586B8 /* Json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Json.swift; sourceTree = "<group>"; };
+		491B9B7419D35F2E002586B8 /* JsonParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
+		491B9B7519D35F2E002586B8 /* JsonParser+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JsonParser+Foundation.swift"; sourceTree = "<group>"; };
+		491B9B7619D35F2E002586B8 /* JsonSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonSerializer.h; sourceTree = "<group>"; };
+		491B9B7719D35F2E002586B8 /* JsonSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonSerializer.swift; sourceTree = "<group>"; };
+		491B9B7819D35F2E002586B8 /* ParseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseError.swift; sourceTree = "<group>"; };
+		491B9B7919D35F2E002586B8 /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
 		4923ED1A19D33C5F002A00A0 /* OrderCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCollectionViewCell.swift; sourceTree = "<group>"; };
 		4923ED3C19D340DB002A00A0 /* HTTPRequestSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequestSerializer.swift; sourceTree = "<group>"; };
 		4923ED3D19D340DB002A00A0 /* HTTPResponseSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponseSerializer.swift; sourceTree = "<group>"; };
@@ -113,6 +126,13 @@
 		490FC6BF19D304F00061CED3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				491B9B7319D35F2E002586B8 /* Json.swift */,
+				491B9B7419D35F2E002586B8 /* JsonParser.swift */,
+				491B9B7519D35F2E002586B8 /* JsonParser+Foundation.swift */,
+				491B9B7619D35F2E002586B8 /* JsonSerializer.h */,
+				491B9B7719D35F2E002586B8 /* JsonSerializer.swift */,
+				491B9B7819D35F2E002586B8 /* ParseError.swift */,
+				491B9B7919D35F2E002586B8 /* StringUtils.swift */,
 				4923ED3C19D340DB002A00A0 /* HTTPRequestSerializer.swift */,
 				4923ED3D19D340DB002A00A0 /* HTTPResponseSerializer.swift */,
 				4923ED3E19D340DB002A00A0 /* HTTPTask.swift */,
@@ -266,13 +286,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				4923ED4419D340DB002A00A0 /* HTTPUpload.swift in Sources */,
+				491B9B7A19D35F2E002586B8 /* Json.swift in Sources */,
 				4923ED4319D340DB002A00A0 /* HTTPTask.swift in Sources */,
+				491B9B7C19D35F2E002586B8 /* JsonParser+Foundation.swift in Sources */,
 				496798BB19D3320800863963 /* OrderHistoryViewController.swift in Sources */,
 				491B9B7219D3463A002586B8 /* Order.swift in Sources */,
+				491B9B7F19D35F2E002586B8 /* StringUtils.swift in Sources */,
 				490FC6C419D304F00061CED3 /* ViewController.swift in Sources */,
 				4923ED4219D340DB002A00A0 /* HTTPResponseSerializer.swift in Sources */,
+				491B9B7E19D35F2E002586B8 /* ParseError.swift in Sources */,
 				4923ED4119D340DB002A00A0 /* HTTPRequestSerializer.swift in Sources */,
 				490FC6C219D304F00061CED3 /* AppDelegate.swift in Sources */,
+				491B9B7B19D35F2E002586B8 /* JsonParser.swift in Sources */,
+				491B9B7D19D35F2E002586B8 /* JsonSerializer.swift in Sources */,
 				4923ED1B19D33C5F002A00A0 /* OrderCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

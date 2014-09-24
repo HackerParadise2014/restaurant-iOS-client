@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OrderHistoryViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate
+class OrderHistoryViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout
 {
     let apiEndPoint = "http://rest-ordering.herokuapp.com/orders.json"
     
@@ -18,23 +18,28 @@ class OrderHistoryViewController: UIViewController, UICollectionViewDataSource, 
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
         grabOrderHistory()
+        
     }
   
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return self.orders.count
     }
+    
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         var cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as OrderCollectionViewCell
-        
-        cell.item.text = "test"
-        cell.price.text = "9999"
-        
-        
 
+        var order = self.orders[indexPath.row]
+        
+        cell.price.text = order.orderTotal
+        cell.date.text = order.createdAt
+        cell.item.text = order.itemName
+        
         return cell
     }
     
@@ -45,21 +50,45 @@ class OrderHistoryViewController: UIViewController, UICollectionViewDataSource, 
         request.requestSerializer = JSONRequestSerializer()
         //The expected response will be JSON and be converted to an object return by NSJSONSerialization instead of a NSData.
         request.responseSerializer = JSONResponseSerializer()
+        
         request.GET(apiEndPoint, parameters: nil, success: {(response: HTTPResponse) -> Void in
-            if response.responseObject != nil {
-//                orderHistory = response.responseObject!
-//                var theDict = response.responseObject! as Dictionary<String,AnyObject>
-                println("example of the JSON key:")
-                
-                for orderJson in response.responseObject! as NSArray {
-                    println("first loop: \(orderJson)")
-                    for aKey in (orderJson as NSDictionary).allKeys {
-                        println("second loop: \(aKey)")
-                        println("value: \(orderJson[aKey])")
-                    }
-                }
             
-                println("print the whole response: \(response.responseObject!) ")
+            if response.responseObject != nil {
+                
+                let responseArray = response.responseObject! as NSArray
+                
+                for orderDict in responseArray
+                {
+                    var order = Order()
+                    order.orderTotal = orderDict["order_total"] as String
+                    
+                    // get the first line item as the name
+                    let lineArray = orderDict["lines"] as NSArray
+                   
+                    
+                    for line in lineArray {
+                        
+                        println("line:")
+                        println(line)
+                        
+                        order.itemName = line["name"] as String
+                        order.createdAt = line["created_at"] as String
+                        
+                        
+                            
+                        
+                    }
+                    
+                    
+                    self.orders.append(order)
+                    
+                    
+                }
+                
+                dispatch_async(dispatch_get_main_queue(),{
+                    self.collectionView.reloadData()
+                })
+                
         
             }
             },failure: {(error: NSError) -> Void in

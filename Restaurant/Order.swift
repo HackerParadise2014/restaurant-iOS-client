@@ -13,7 +13,9 @@ struct Order {
     var createdAt = ""
     var orderTotal = ""
     var mealType = ""
-    var itemName = "Fake"
+    
+    var itemName = ""
+    
     
 }
 
