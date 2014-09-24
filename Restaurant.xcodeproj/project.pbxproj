@@ -13,6 +13,11 @@
 		490FC6C919D304F00061CED3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 490FC6C819D304F00061CED3 /* Images.xcassets */; };
 		490FC6CC19D304F00061CED3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 490FC6CA19D304F00061CED3 /* LaunchScreen.xib */; };
 		490FC6D819D304F00061CED3 /* RestaurantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490FC6D719D304F00061CED3 /* RestaurantTests.swift */; };
+		490FC6E219D317030061CED3 /* DSC_0383.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 490FC6E119D317030061CED3 /* DSC_0383.jpg */; };
+		496798BB19D3320800863963 /* OrderHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496798BA19D3320800863963 /* OrderHistoryViewController.swift */; };
+		4992F9C319D31A0200403E9B /* new.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4992F9C219D31A0200403E9B /* new.jpg */; };
+		4992F9C619D322E100403E9B /* order.png in Resources */ = {isa = PBXBuildFile; fileRef = 4992F9C419D322E100403E9B /* order.png */; };
+		4992F9C719D322E100403E9B /* history.png in Resources */ = {isa = PBXBuildFile; fileRef = 4992F9C519D322E100403E9B /* history.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		490FC6D119D304F00061CED3 /* RestaurantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestaurantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		490FC6D619D304F00061CED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		490FC6D719D304F00061CED3 /* RestaurantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTests.swift; sourceTree = "<group>"; };
+		490FC6E119D317030061CED3 /* DSC_0383.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DSC_0383.jpg; sourceTree = "<group>"; };
+		496798BA19D3320800863963 /* OrderHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderHistoryViewController.swift; sourceTree = "<group>"; };
+		4992F9C219D31A0200403E9B /* new.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = new.jpg; sourceTree = "<group>"; };
+		4992F9C419D322E100403E9B /* order.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = order.png; sourceTree = "<group>"; };
+		4992F9C519D322E100403E9B /* history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = history.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				490FC6C119D304F00061CED3 /* AppDelegate.swift */,
-				490FC6C319D304F00061CED3 /* ViewController.swift */,
+				496798BC19D3323400863963 /* Controllers */,
 				490FC6C519D304F00061CED3 /* Main.storyboard */,
 				490FC6C819D304F00061CED3 /* Images.xcassets */,
 				490FC6CA19D304F00061CED3 /* LaunchScreen.xib */,
@@ -90,6 +100,10 @@
 		490FC6BF19D304F00061CED3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4992F9C419D322E100403E9B /* order.png */,
+				4992F9C519D322E100403E9B /* history.png */,
+				4992F9C219D31A0200403E9B /* new.jpg */,
+				490FC6E119D317030061CED3 /* DSC_0383.jpg */,
 				490FC6C019D304F00061CED3 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -110,6 +124,15 @@
 				490FC6D619D304F00061CED3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		496798BC19D3323400863963 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				490FC6C319D304F00061CED3 /* ViewController.swift */,
+				496798BA19D3320800863963 /* OrderHistoryViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +217,10 @@
 			files = (
 				490FC6C719D304F00061CED3 /* Main.storyboard in Resources */,
 				490FC6CC19D304F00061CED3 /* LaunchScreen.xib in Resources */,
+				4992F9C719D322E100403E9B /* history.png in Resources */,
+				4992F9C319D31A0200403E9B /* new.jpg in Resources */,
+				4992F9C619D322E100403E9B /* order.png in Resources */,
+				490FC6E219D317030061CED3 /* DSC_0383.jpg in Resources */,
 				490FC6C919D304F00061CED3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				496798BB19D3320800863963 /* OrderHistoryViewController.swift in Sources */,
 				490FC6C419D304F00061CED3 /* ViewController.swift in Sources */,
 				490FC6C219D304F00061CED3 /* AppDelegate.swift in Sources */,
 			);
@@ -405,6 +433,7 @@
 				490FC6DD19D304F00061CED3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		490FC6DE19D304F00061CED3 /* Build configuration list for PBXNativeTarget "RestaurantTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +442,7 @@
 				490FC6E019D304F00061CED3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
