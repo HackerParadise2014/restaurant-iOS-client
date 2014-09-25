@@ -79,6 +79,9 @@ class ViewController: UIViewController, UIPickerViewDelegate {
             
             if (httpResponse.statusCode == 200)
             {
+                menuItemName.text = ""
+                menuItemPrice.text = ""
+                menuItemPrice.resignFirstResponder()
                 
                 var alert = UIAlertController(title: "Order submitted", message: "Your order was submitted successfully", preferredStyle: UIAlertControllerStyle.Alert)
                 alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
