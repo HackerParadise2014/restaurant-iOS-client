@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="TJA-4t-HhN">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -60,7 +61,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="New Order" id="Mey-wF-KEq"/>
+                    <tabBarItem key="tabBarItem" title="New Order" image="Order" id="Mey-wF-KEq"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="mealTypePicker" destination="8il-rY-Okt" id="ydn-mb-vJO"/>
@@ -151,7 +152,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="History" id="4fL-To-kID"/>
+                    <tabBarItem key="tabBarItem" title="History" image="History" id="4fL-To-kID"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="collectionView" destination="mbr-vD-wBf" id="A2t-2I-ffb"/>
@@ -184,6 +185,8 @@
     </scenes>
     <resources>
         <image name="DSC_0383.jpg" width="2848" height="4288"/>
+        <image name="History" width="64" height="64"/>
+        <image name="Order" width="50" height="50"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

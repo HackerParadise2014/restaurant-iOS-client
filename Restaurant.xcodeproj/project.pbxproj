@@ -28,9 +28,6 @@
 		4923ED4419D340DB002A00A0 /* HTTPUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4923ED3F19D340DB002A00A0 /* HTTPUpload.swift */; };
 		496798BB19D3320800863963 /* OrderHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496798BA19D3320800863963 /* OrderHistoryViewController.swift */; };
 		4992F9C319D31A0200403E9B /* new.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4992F9C219D31A0200403E9B /* new.jpg */; };
-		4992F9C619D322E100403E9B /* order.png in Resources */ = {isa = PBXBuildFile; fileRef = 4992F9C419D322E100403E9B /* order.png */; };
-		4992F9C719D322E100403E9B /* history.png in Resources */ = {isa = PBXBuildFile; fileRef = 4992F9C519D322E100403E9B /* history.png */; };
-		49B7457819D45A220059EC80 /* fork-knife.png in Resources */ = {isa = PBXBuildFile; fileRef = 49B7457719D45A220059EC80 /* fork-knife.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,9 +67,6 @@
 		4923ED3F19D340DB002A00A0 /* HTTPUpload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPUpload.swift; sourceTree = "<group>"; };
 		496798BA19D3320800863963 /* OrderHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderHistoryViewController.swift; sourceTree = "<group>"; };
 		4992F9C219D31A0200403E9B /* new.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = new.jpg; sourceTree = "<group>"; };
-		4992F9C419D322E100403E9B /* order.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = order.png; sourceTree = "<group>"; };
-		4992F9C519D322E100403E9B /* history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = history.png; sourceTree = "<group>"; };
-		49B7457719D45A220059EC80 /* fork-knife.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fork-knife.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +122,6 @@
 		490FC6BF19D304F00061CED3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				49B7457719D45A220059EC80 /* fork-knife.png */,
 				491B9B7319D35F2E002586B8 /* Json.swift */,
 				491B9B7419D35F2E002586B8 /* JsonParser.swift */,
 				491B9B7519D35F2E002586B8 /* JsonParser+Foundation.swift */,
@@ -140,8 +133,6 @@
 				4923ED3D19D340DB002A00A0 /* HTTPResponseSerializer.swift */,
 				4923ED3E19D340DB002A00A0 /* HTTPTask.swift */,
 				4923ED3F19D340DB002A00A0 /* HTTPUpload.swift */,
-				4992F9C419D322E100403E9B /* order.png */,
-				4992F9C519D322E100403E9B /* history.png */,
 				4992F9C219D31A0200403E9B /* new.jpg */,
 				490FC6E119D317030061CED3 /* DSC_0383.jpg */,
 				490FC6C019D304F00061CED3 /* Info.plist */,
@@ -266,10 +257,7 @@
 			files = (
 				490FC6C719D304F00061CED3 /* Main.storyboard in Resources */,
 				490FC6CC19D304F00061CED3 /* LaunchScreen.xib in Resources */,
-				4992F9C719D322E100403E9B /* history.png in Resources */,
 				4992F9C319D31A0200403E9B /* new.jpg in Resources */,
-				4992F9C619D322E100403E9B /* order.png in Resources */,
-				49B7457819D45A220059EC80 /* fork-knife.png in Resources */,
 				490FC6E219D317030061CED3 /* DSC_0383.jpg in Resources */,
 				490FC6C919D304F00061CED3 /* Images.xcassets in Resources */,
 			);
@@ -427,6 +415,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Restaurant/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -437,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Restaurant/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
